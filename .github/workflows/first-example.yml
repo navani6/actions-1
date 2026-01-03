@@ -9,11 +9,15 @@ jobs:
         - name: Checkout Repohttps
           uses: actions/checkout@v4
           
-        - name: Welcome Message
-          run: echo "My First GitHub Actions Job"
+        - name: List and read file
+          run:  |
+            echo "My First GitHub Actions Job"
+            ls  -ltr
+            cat README.md 
+#          run: echo "My First GitHub Actions Job"
 
-        - name: List files
-          run: ls
+#       - name: List files
+#          run: ls
 
-        - name: Read file
-          run: cat README.md
+#       - name: Read file
+#          run: cat README.md
